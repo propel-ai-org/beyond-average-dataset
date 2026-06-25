@@ -1,0 +1,1402 @@
+{
+  "generated": "2026-06-10T22:15:45.529Z",
+  "receipts": 255,
+  "usable": 255,
+  "errored": 0,
+  "fidelity": [
+    {
+      "scenario": "01",
+      "arm": "spec",
+      "persona": "director",
+      "model": "claude-opus-4-8",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 0.3333333333333333,
+      "meanWeightDistance": 12,
+      "meanGroundingRecall": 0.5555555555555555,
+      "stability": {
+        "status": "partial",
+        "modalCallRate": 0.6666666666666666,
+        "meanRunDistance": 13.333333333333334
+      }
+    },
+    {
+      "scenario": "01",
+      "arm": "spec",
+      "persona": "director",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 0,
+      "meanWeightDistance": 36,
+      "meanGroundingRecall": 0.6666666666666666,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 1.9999999999999998
+      }
+    },
+    {
+      "scenario": "01",
+      "arm": "spec",
+      "persona": "director",
+      "model": "claude-haiku-4-5-20251001",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 0,
+      "meanWeightDistance": 35.333333333333336,
+      "meanGroundingRecall": 0.5555555555555555,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 11.666666666666666
+      }
+    },
+    {
+      "scenario": "01",
+      "arm": "role",
+      "persona": "director",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 0,
+      "meanWeightDistance": 24.666666666666668,
+      "meanGroundingRecall": 0.6666666666666666,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 2.666666666666669
+      }
+    },
+    {
+      "scenario": "01",
+      "arm": "spec",
+      "persona": "legal",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 1,
+      "callMatchRate": 1,
+      "meanWeightDistance": 8.666666666666666,
+      "meanGroundingRecall": 0.6666666666666666,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 9
+      }
+    },
+    {
+      "scenario": "01",
+      "arm": "spec",
+      "persona": "legal",
+      "model": "claude-opus-4-8",
+      "runs": 3,
+      "passRate": 1,
+      "callMatchRate": 1,
+      "meanWeightDistance": 11.666666666666666,
+      "meanGroundingRecall": 0.7777777777777777,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 5.333333333333333
+      }
+    },
+    {
+      "scenario": "01",
+      "arm": "role",
+      "persona": "legal",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 1,
+      "meanWeightDistance": 18,
+      "meanGroundingRecall": 0.6666666666666666,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 0.6666666666666679
+      }
+    },
+    {
+      "scenario": "01",
+      "arm": "spec",
+      "persona": "legal",
+      "model": "claude-haiku-4-5-20251001",
+      "runs": 3,
+      "passRate": 0.6666666666666666,
+      "callMatchRate": 1,
+      "meanWeightDistance": 15.666666666666666,
+      "meanGroundingRecall": 0.6666666666666666,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 5
+      }
+    },
+    {
+      "scenario": "01",
+      "arm": "spec",
+      "persona": "worker",
+      "model": "claude-haiku-4-5-20251001",
+      "runs": 3,
+      "passRate": 0.3333333333333333,
+      "callMatchRate": 0.6666666666666666,
+      "meanWeightDistance": 21.333333333333332,
+      "meanGroundingRecall": 0.5555555555555555,
+      "stability": {
+        "status": "partial",
+        "modalCallRate": 0.6666666666666666,
+        "meanRunDistance": 20.000000000000004
+      }
+    },
+    {
+      "scenario": "01",
+      "arm": "spec",
+      "persona": "worker",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0.3333333333333333,
+      "callMatchRate": 1,
+      "meanWeightDistance": 15.66666666666667,
+      "meanGroundingRecall": 0.6666666666666666,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 6.666666666666669
+      }
+    },
+    {
+      "scenario": "01",
+      "arm": "role",
+      "persona": "worker",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 0,
+      "meanWeightDistance": 39,
+      "meanGroundingRecall": 0,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 4.6666666666666705
+      }
+    },
+    {
+      "scenario": "01",
+      "arm": "spec",
+      "persona": "worker",
+      "model": "claude-opus-4-8",
+      "runs": 3,
+      "passRate": 1,
+      "callMatchRate": 1,
+      "meanWeightDistance": 7.333333333333336,
+      "meanGroundingRecall": 0.6666666666666666,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 5.999999999999997
+      }
+    },
+    {
+      "scenario": "02",
+      "arm": "spec",
+      "persona": "director",
+      "model": "claude-opus-4-8",
+      "runs": 3,
+      "passRate": 0.3333333333333333,
+      "callMatchRate": 1,
+      "meanWeightDistance": 9.333333333333334,
+      "meanGroundingRecall": 0.16666666666666666,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 4
+      }
+    },
+    {
+      "scenario": "02",
+      "arm": "spec",
+      "persona": "director",
+      "model": "claude-haiku-4-5-20251001",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 1,
+      "meanWeightDistance": 11.666666666666666,
+      "meanGroundingRecall": 0,
+      "stability": {
+        "status": "partial",
+        "modalCallRate": 1,
+        "meanRunDistance": 13.000000000000002
+      }
+    },
+    {
+      "scenario": "02",
+      "arm": "spec",
+      "persona": "director",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0.3333333333333333,
+      "callMatchRate": 1,
+      "meanWeightDistance": 12.000000000000002,
+      "meanGroundingRecall": 0.16666666666666666,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 2.6666666666666665
+      }
+    },
+    {
+      "scenario": "02",
+      "arm": "role",
+      "persona": "director",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 1,
+      "meanWeightDistance": 10.000000000000002,
+      "meanGroundingRecall": 0,
+      "stability": {
+        "status": "partial",
+        "modalCallRate": 1,
+        "meanRunDistance": 12.000000000000002
+      }
+    },
+    {
+      "scenario": "02",
+      "arm": "spec",
+      "persona": "legal",
+      "model": "claude-haiku-4-5-20251001",
+      "runs": 3,
+      "passRate": 0.6666666666666666,
+      "callMatchRate": 0.6666666666666666,
+      "meanWeightDistance": 15.333333333333336,
+      "meanGroundingRecall": 0.3333333333333333,
+      "stability": {
+        "status": "partial",
+        "modalCallRate": 0.6666666666666666,
+        "meanRunDistance": 21
+      }
+    },
+    {
+      "scenario": "02",
+      "arm": "spec",
+      "persona": "legal",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0.3333333333333333,
+      "callMatchRate": 0.3333333333333333,
+      "meanWeightDistance": 18.33333333333334,
+      "meanGroundingRecall": 0.3333333333333333,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 0.6666666666666666,
+        "meanRunDistance": 10.000000000000002
+      }
+    },
+    {
+      "scenario": "02",
+      "arm": "spec",
+      "persona": "legal",
+      "model": "claude-opus-4-8",
+      "runs": 3,
+      "passRate": 0.6666666666666666,
+      "callMatchRate": 1,
+      "meanWeightDistance": 6.333333333333336,
+      "meanGroundingRecall": 0.3333333333333333,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 6.333333333333336
+      }
+    },
+    {
+      "scenario": "02",
+      "arm": "role",
+      "persona": "legal",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 0,
+      "meanWeightDistance": 41.333333333333336,
+      "meanGroundingRecall": 0,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 8.333333333333334
+      }
+    },
+    {
+      "scenario": "02",
+      "arm": "spec",
+      "persona": "worker",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 0,
+      "meanWeightDistance": 31.666666666666668,
+      "meanGroundingRecall": 0.3333333333333333,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 3.3333333333333335
+      }
+    },
+    {
+      "scenario": "02",
+      "arm": "role",
+      "persona": "worker",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 0,
+      "meanWeightDistance": 29.666666666666668,
+      "meanGroundingRecall": 0,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 9.000000000000002
+      }
+    },
+    {
+      "scenario": "02",
+      "arm": "spec",
+      "persona": "worker",
+      "model": "claude-opus-4-8",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 0,
+      "meanWeightDistance": 25,
+      "meanGroundingRecall": 0.3333333333333333,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 0
+      }
+    },
+    {
+      "scenario": "02",
+      "arm": "spec",
+      "persona": "worker",
+      "model": "claude-haiku-4-5-20251001",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 0,
+      "meanWeightDistance": 31.666666666666668,
+      "meanGroundingRecall": 0.3333333333333333,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 10
+      }
+    },
+    {
+      "scenario": "03",
+      "arm": "spec",
+      "persona": "director",
+      "model": "claude-haiku-4-5-20251001",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 1,
+      "meanWeightDistance": 27.666666666666668,
+      "meanGroundingRecall": 0.1111111111111111,
+      "stability": {
+        "status": "partial",
+        "modalCallRate": 1,
+        "meanRunDistance": 13.333333333333334
+      }
+    },
+    {
+      "scenario": "03",
+      "arm": "spec",
+      "persona": "director",
+      "model": "claude-opus-4-8",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 1,
+      "meanWeightDistance": 13.666666666666666,
+      "meanGroundingRecall": 0.1111111111111111,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 7.666666666666665
+      }
+    },
+    {
+      "scenario": "03",
+      "arm": "spec",
+      "persona": "director",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 1,
+      "meanWeightDistance": 22.333333333333332,
+      "meanGroundingRecall": 0.1111111111111111,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 6.333333333333333
+      }
+    },
+    {
+      "scenario": "03",
+      "arm": "role",
+      "persona": "director",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 1,
+      "meanWeightDistance": 25.333333333333332,
+      "meanGroundingRecall": 0.1111111111111111,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 5
+      }
+    },
+    {
+      "scenario": "03",
+      "arm": "spec",
+      "persona": "legal",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 1,
+      "meanWeightDistance": 28.333333333333332,
+      "meanGroundingRecall": 0.4444444444444444,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 7.333333333333333
+      }
+    },
+    {
+      "scenario": "03",
+      "arm": "spec",
+      "persona": "legal",
+      "model": "claude-opus-4-8",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 1,
+      "meanWeightDistance": 27.333333333333332,
+      "meanGroundingRecall": 0.2222222222222222,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 7
+      }
+    },
+    {
+      "scenario": "03",
+      "arm": "spec",
+      "persona": "legal",
+      "model": "claude-haiku-4-5-20251001",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 0.3333333333333333,
+      "meanWeightDistance": 45.666666666666664,
+      "meanGroundingRecall": 0.4444444444444444,
+      "stability": {
+        "status": "fail",
+        "modalCallRate": 0.6666666666666666,
+        "meanRunDistance": 30
+      }
+    },
+    {
+      "scenario": "03",
+      "arm": "role",
+      "persona": "legal",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 0,
+      "meanWeightDistance": 46.666666666666664,
+      "meanGroundingRecall": 0.4444444444444444,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 7.333333333333331
+      }
+    },
+    {
+      "scenario": "03",
+      "arm": "spec",
+      "persona": "worker",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0.3333333333333333,
+      "callMatchRate": 1,
+      "meanWeightDistance": 8,
+      "meanGroundingRecall": 0.4444444444444444,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 2
+      }
+    },
+    {
+      "scenario": "03",
+      "arm": "spec",
+      "persona": "worker",
+      "model": "claude-opus-4-8",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 0,
+      "meanWeightDistance": 22,
+      "meanGroundingRecall": 0.2222222222222222,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 0
+      }
+    },
+    {
+      "scenario": "03",
+      "arm": "role",
+      "persona": "worker",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 1,
+      "meanWeightDistance": 15,
+      "meanGroundingRecall": 0.3333333333333333,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 8.666666666666666
+      }
+    },
+    {
+      "scenario": "03",
+      "arm": "spec",
+      "persona": "worker",
+      "model": "claude-haiku-4-5-20251001",
+      "runs": 3,
+      "passRate": 0.3333333333333333,
+      "callMatchRate": 1,
+      "meanWeightDistance": 12.333333333333334,
+      "meanGroundingRecall": 0.6666666666666666,
+      "stability": {
+        "status": "partial",
+        "modalCallRate": 1,
+        "meanRunDistance": 14
+      }
+    },
+    {
+      "scenario": "04",
+      "arm": "spec",
+      "persona": "director",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 1,
+      "meanWeightDistance": 16.666666666666668,
+      "meanGroundingRecall": 0.1111111111111111,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 10.666666666666664
+      }
+    },
+    {
+      "scenario": "04",
+      "arm": "spec",
+      "persona": "director",
+      "model": "claude-opus-4-8",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 0,
+      "meanWeightDistance": 28.666666666666668,
+      "meanGroundingRecall": 0,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 7.333333333333331
+      }
+    },
+    {
+      "scenario": "04",
+      "arm": "role",
+      "persona": "director",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 1,
+      "meanWeightDistance": 18.333333333333336,
+      "meanGroundingRecall": 0,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 3.3333333333333357
+      }
+    },
+    {
+      "scenario": "04",
+      "arm": "spec",
+      "persona": "director",
+      "model": "claude-haiku-4-5-20251001",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 0,
+      "meanWeightDistance": 41.333333333333336,
+      "meanGroundingRecall": 0,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 10
+      }
+    },
+    {
+      "scenario": "04",
+      "arm": "spec",
+      "persona": "legal",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 1,
+      "meanWeightDistance": 10.666666666666666,
+      "meanGroundingRecall": 0.2222222222222222,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 6.666666666666664
+      }
+    },
+    {
+      "scenario": "04",
+      "arm": "spec",
+      "persona": "legal",
+      "model": "claude-opus-4-8",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 1,
+      "meanWeightDistance": 17.666666666666668,
+      "meanGroundingRecall": 0,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 4.666666666666668
+      }
+    },
+    {
+      "scenario": "04",
+      "arm": "spec",
+      "persona": "legal",
+      "model": "claude-haiku-4-5-20251001",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 1,
+      "meanWeightDistance": 7.333333333333332,
+      "meanGroundingRecall": 0.2222222222222222,
+      "stability": {
+        "status": "partial",
+        "modalCallRate": 1,
+        "meanRunDistance": 13.33333333333333
+      }
+    },
+    {
+      "scenario": "04",
+      "arm": "role",
+      "persona": "legal",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 1,
+      "meanWeightDistance": 10.66666666666667,
+      "meanGroundingRecall": 0,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 2.0000000000000013
+      }
+    },
+    {
+      "scenario": "04",
+      "arm": "spec",
+      "persona": "worker",
+      "model": "claude-opus-4-8",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 1,
+      "meanWeightDistance": 4,
+      "meanGroundingRecall": 0,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 6
+      }
+    },
+    {
+      "scenario": "04",
+      "arm": "role",
+      "persona": "worker",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 0,
+      "meanWeightDistance": 41,
+      "meanGroundingRecall": 0,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 10
+      }
+    },
+    {
+      "scenario": "04",
+      "arm": "spec",
+      "persona": "worker",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 0,
+      "meanWeightDistance": 36,
+      "meanGroundingRecall": 0.1111111111111111,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 8.33333333333333
+      }
+    },
+    {
+      "scenario": "04",
+      "arm": "spec",
+      "persona": "worker",
+      "model": "claude-haiku-4-5-20251001",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 0,
+      "meanWeightDistance": 44.333333333333336,
+      "meanGroundingRecall": 0,
+      "stability": {
+        "status": "partial",
+        "modalCallRate": 1,
+        "meanRunDistance": 20
+      }
+    },
+    {
+      "scenario": "05",
+      "arm": "spec",
+      "persona": "director",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 1,
+      "meanWeightDistance": 24,
+      "meanGroundingRecall": 0.2222222222222222,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 3.333333333333331
+      }
+    },
+    {
+      "scenario": "05",
+      "arm": "spec",
+      "persona": "director",
+      "model": "claude-opus-4-8",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 1,
+      "meanWeightDistance": 22.333333333333332,
+      "meanGroundingRecall": 0.2222222222222222,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 3.999999999999998
+      }
+    },
+    {
+      "scenario": "05",
+      "arm": "role",
+      "persona": "director",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 1,
+      "meanWeightDistance": 20.666666666666668,
+      "meanGroundingRecall": 0.1111111111111111,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 5.666666666666663
+      }
+    },
+    {
+      "scenario": "05",
+      "arm": "spec",
+      "persona": "director",
+      "model": "claude-haiku-4-5-20251001",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 0.3333333333333333,
+      "meanWeightDistance": 38.666666666666664,
+      "meanGroundingRecall": 0.4444444444444444,
+      "stability": {
+        "status": "fail",
+        "modalCallRate": 0.6666666666666666,
+        "meanRunDistance": 33.333333333333336
+      }
+    },
+    {
+      "scenario": "05",
+      "arm": "spec",
+      "persona": "legal",
+      "model": "claude-opus-4-8",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 1,
+      "meanWeightDistance": 17.333333333333332,
+      "meanGroundingRecall": 0.1111111111111111,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 3.333333333333337
+      }
+    },
+    {
+      "scenario": "05",
+      "arm": "spec",
+      "persona": "legal",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 1,
+      "meanWeightDistance": 18.666666666666668,
+      "meanGroundingRecall": 0.4444444444444444,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 5.666666666666664
+      }
+    },
+    {
+      "scenario": "05",
+      "arm": "spec",
+      "persona": "legal",
+      "model": "claude-haiku-4-5-20251001",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 1,
+      "meanWeightDistance": 16.333333333333332,
+      "meanGroundingRecall": 0.2222222222222222,
+      "stability": {
+        "status": "partial",
+        "modalCallRate": 1,
+        "meanRunDistance": 20
+      }
+    },
+    {
+      "scenario": "05",
+      "arm": "role",
+      "persona": "legal",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 0,
+      "meanWeightDistance": 46.333333333333336,
+      "meanGroundingRecall": 0.3333333333333333,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 6.666666666666664
+      }
+    },
+    {
+      "scenario": "05",
+      "arm": "role",
+      "persona": "worker",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 1,
+      "meanWeightDistance": 12,
+      "meanGroundingRecall": 0.1111111111111111,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 6.666666666666662
+      }
+    },
+    {
+      "scenario": "05",
+      "arm": "spec",
+      "persona": "worker",
+      "model": "claude-sonnet-4-6",
+      "runs": 3,
+      "passRate": 0.6666666666666666,
+      "callMatchRate": 1,
+      "meanWeightDistance": 12.666666666666666,
+      "meanGroundingRecall": 0.5555555555555555,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 3.333333333333331
+      }
+    },
+    {
+      "scenario": "05",
+      "arm": "spec",
+      "persona": "worker",
+      "model": "claude-opus-4-8",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 1,
+      "meanWeightDistance": 17.666666666666668,
+      "meanGroundingRecall": 0.6666666666666666,
+      "stability": {
+        "status": "pass",
+        "modalCallRate": 1,
+        "meanRunDistance": 3.3333333333333286
+      }
+    },
+    {
+      "scenario": "05",
+      "arm": "spec",
+      "persona": "worker",
+      "model": "claude-haiku-4-5-20251001",
+      "runs": 3,
+      "passRate": 0,
+      "callMatchRate": 0.6666666666666666,
+      "meanWeightDistance": 31.666666666666668,
+      "meanGroundingRecall": 0.1111111111111111,
+      "stability": {
+        "status": "partial",
+        "modalCallRate": 0.6666666666666666,
+        "meanRunDistance": 16.666666666666668
+      }
+    }
+  ],
+  "separation": [
+    {
+      "scenario": "01",
+      "arm": "spec",
+      "model": "claude-opus-4-8",
+      "runIndexes": 3,
+      "meanSeparationRatio": 0.9166666666666669,
+      "meanDistinctCalls": 2,
+      "expectedDistinctCalls": 2,
+      "statuses": [
+        "pass",
+        "pass",
+        "pass"
+      ]
+    },
+    {
+      "scenario": "01",
+      "arm": "spec",
+      "model": "claude-haiku-4-5-20251001",
+      "runIndexes": 3,
+      "meanSeparationRatio": 0.7327586206896551,
+      "meanDistinctCalls": 1.6666666666666667,
+      "expectedDistinctCalls": 2,
+      "statuses": [
+        "partial",
+        "pass",
+        "fail"
+      ]
+    },
+    {
+      "scenario": "01",
+      "arm": "spec",
+      "model": "claude-sonnet-4-6",
+      "runIndexes": 3,
+      "meanSeparationRatio": 0.6724137931034483,
+      "meanDistinctCalls": 2,
+      "expectedDistinctCalls": 2,
+      "statuses": [
+        "partial",
+        "pass",
+        "partial"
+      ]
+    },
+    {
+      "scenario": "01",
+      "arm": "role",
+      "model": "claude-sonnet-4-6",
+      "runIndexes": 3,
+      "meanSeparationRatio": 0.08620689655172421,
+      "meanDistinctCalls": 1,
+      "expectedDistinctCalls": 2,
+      "statuses": [
+        "fail",
+        "fail",
+        "fail"
+      ]
+    },
+    {
+      "scenario": "02",
+      "arm": "spec",
+      "model": "claude-sonnet-4-6",
+      "runIndexes": 3,
+      "meanSeparationRatio": 0.5420560747663552,
+      "meanDistinctCalls": 1.3333333333333333,
+      "expectedDistinctCalls": 3,
+      "statuses": [
+        "fail",
+        "partial",
+        "fail"
+      ]
+    },
+    {
+      "scenario": "02",
+      "arm": "spec",
+      "model": "claude-opus-4-8",
+      "runIndexes": 3,
+      "meanSeparationRatio": 0.822429906542056,
+      "meanDistinctCalls": 2,
+      "expectedDistinctCalls": 3,
+      "statuses": [
+        "partial",
+        "partial",
+        "partial"
+      ]
+    },
+    {
+      "scenario": "02",
+      "arm": "spec",
+      "model": "claude-haiku-4-5-20251001",
+      "runIndexes": 3,
+      "meanSeparationRatio": 0.6292834890965733,
+      "meanDistinctCalls": 1.6666666666666667,
+      "expectedDistinctCalls": 3,
+      "statuses": [
+        "fail",
+        "partial",
+        "partial"
+      ]
+    },
+    {
+      "scenario": "02",
+      "arm": "role",
+      "model": "claude-sonnet-4-6",
+      "runIndexes": 3,
+      "meanSeparationRatio": 0.2928348909657321,
+      "meanDistinctCalls": 1,
+      "expectedDistinctCalls": 3,
+      "statuses": [
+        "fail",
+        "fail",
+        "fail"
+      ]
+    },
+    {
+      "scenario": "03",
+      "arm": "spec",
+      "model": "claude-sonnet-4-6",
+      "runIndexes": 3,
+      "meanSeparationRatio": 0.6287878787878788,
+      "meanDistinctCalls": 2,
+      "expectedDistinctCalls": 2,
+      "statuses": [
+        "partial",
+        "partial",
+        "partial"
+      ]
+    },
+    {
+      "scenario": "03",
+      "arm": "spec",
+      "model": "claude-opus-4-8",
+      "runIndexes": 3,
+      "meanSeparationRatio": 0.6944444444444445,
+      "meanDistinctCalls": 3,
+      "expectedDistinctCalls": 2,
+      "statuses": [
+        "partial",
+        "partial",
+        "partial"
+      ]
+    },
+    {
+      "scenario": "03",
+      "arm": "spec",
+      "model": "claude-haiku-4-5-20251001",
+      "runIndexes": 3,
+      "meanSeparationRatio": 0.5277777777777778,
+      "meanDistinctCalls": 1.3333333333333333,
+      "expectedDistinctCalls": 2,
+      "statuses": [
+        "fail",
+        "pass",
+        "fail"
+      ]
+    },
+    {
+      "scenario": "03",
+      "arm": "role",
+      "model": "claude-sonnet-4-6",
+      "runIndexes": 3,
+      "meanSeparationRatio": 0.24747474747474743,
+      "meanDistinctCalls": 1,
+      "expectedDistinctCalls": 2,
+      "statuses": [
+        "fail",
+        "fail",
+        "fail"
+      ]
+    },
+    {
+      "scenario": "04",
+      "arm": "spec",
+      "model": "claude-sonnet-4-6",
+      "runIndexes": 3,
+      "meanSeparationRatio": 0.6153846153846154,
+      "meanDistinctCalls": 2,
+      "expectedDistinctCalls": 3,
+      "statuses": [
+        "partial",
+        "partial",
+        "partial"
+      ]
+    },
+    {
+      "scenario": "04",
+      "arm": "spec",
+      "model": "claude-opus-4-8",
+      "runIndexes": 3,
+      "meanSeparationRatio": 0.6974358974358973,
+      "meanDistinctCalls": 2,
+      "expectedDistinctCalls": 3,
+      "statuses": [
+        "partial",
+        "partial",
+        "partial"
+      ]
+    },
+    {
+      "scenario": "04",
+      "arm": "role",
+      "model": "claude-sonnet-4-6",
+      "runIndexes": 3,
+      "meanSeparationRatio": 0.5435897435897435,
+      "meanDistinctCalls": 2,
+      "expectedDistinctCalls": 3,
+      "statuses": [
+        "partial",
+        "fail",
+        "partial"
+      ]
+    },
+    {
+      "scenario": "04",
+      "arm": "spec",
+      "model": "claude-haiku-4-5-20251001",
+      "runIndexes": 3,
+      "meanSeparationRatio": 0.36153846153846153,
+      "meanDistinctCalls": 1,
+      "expectedDistinctCalls": 3,
+      "statuses": [
+        "fail",
+        "fail",
+        "fail"
+      ]
+    },
+    {
+      "scenario": "05",
+      "arm": "spec",
+      "model": "claude-opus-4-8",
+      "runIndexes": 3,
+      "meanSeparationRatio": 0.4897435897435897,
+      "meanDistinctCalls": 2,
+      "expectedDistinctCalls": 2,
+      "statuses": [
+        "fail",
+        "partial",
+        "fail"
+      ]
+    },
+    {
+      "scenario": "05",
+      "arm": "spec",
+      "model": "claude-sonnet-4-6",
+      "runIndexes": 3,
+      "meanSeparationRatio": 0.5076923076923077,
+      "meanDistinctCalls": 2,
+      "expectedDistinctCalls": 2,
+      "statuses": [
+        "partial",
+        "fail",
+        "partial"
+      ]
+    },
+    {
+      "scenario": "05",
+      "arm": "role",
+      "model": "claude-sonnet-4-6",
+      "runIndexes": 3,
+      "meanSeparationRatio": 0.13846153846153844,
+      "meanDistinctCalls": 1,
+      "expectedDistinctCalls": 2,
+      "statuses": [
+        "fail",
+        "fail",
+        "fail"
+      ]
+    },
+    {
+      "scenario": "05",
+      "arm": "spec",
+      "model": "claude-haiku-4-5-20251001",
+      "runIndexes": 3,
+      "meanSeparationRatio": 0.4846153846153846,
+      "meanDistinctCalls": 1.6666666666666667,
+      "expectedDistinctCalls": 2,
+      "statuses": [
+        "fail",
+        "partial",
+        "partial"
+      ]
+    }
+  ],
+  "baselines": [
+    {
+      "scenario": "01",
+      "model": "claude-opus-4-8",
+      "runs": 5,
+      "modalCall": "Not in household",
+      "modalCallRate": 1,
+      "meanConfidence": 74,
+      "recordedCall": "Not in household",
+      "recordedConfidence": 74
+    },
+    {
+      "scenario": "01",
+      "model": "claude-haiku-4-5-20251001",
+      "runs": 5,
+      "modalCall": "Not in household",
+      "modalCallRate": 1,
+      "meanConfidence": 77.8,
+      "recordedCall": "Not in household",
+      "recordedConfidence": 74
+    },
+    {
+      "scenario": "01",
+      "model": "claude-sonnet-4-6",
+      "runs": 5,
+      "modalCall": "Not in household",
+      "modalCallRate": 1,
+      "meanConfidence": 74,
+      "recordedCall": "Not in household",
+      "recordedConfidence": 74
+    },
+    {
+      "scenario": "02",
+      "model": "claude-opus-4-8",
+      "runs": 5,
+      "modalCall": "Pend with specific request",
+      "modalCallRate": 1,
+      "meanConfidence": 76.8,
+      "recordedCall": "Pend with specific request",
+      "recordedConfidence": 74
+    },
+    {
+      "scenario": "02",
+      "model": "claude-haiku-4-5-20251001",
+      "runs": 5,
+      "modalCall": "Pend with specific request",
+      "modalCallRate": 1,
+      "meanConfidence": 73.2,
+      "recordedCall": "Pend with specific request",
+      "recordedConfidence": 74
+    },
+    {
+      "scenario": "02",
+      "model": "claude-sonnet-4-6",
+      "runs": 5,
+      "modalCall": "Pend with specific request",
+      "modalCallRate": 1,
+      "meanConfidence": 74.2,
+      "recordedCall": "Pend with specific request",
+      "recordedConfidence": 74
+    },
+    {
+      "scenario": "03",
+      "model": "claude-haiku-4-5-20251001",
+      "runs": 5,
+      "modalCall": "Countable as unearned income",
+      "modalCallRate": 0.8,
+      "meanConfidence": 77,
+      "recordedCall": "Countable as unearned income",
+      "recordedConfidence": 78
+    },
+    {
+      "scenario": "03",
+      "model": "claude-opus-4-8",
+      "runs": 5,
+      "modalCall": "Countable as unearned income",
+      "modalCallRate": 1,
+      "meanConfidence": 76.8,
+      "recordedCall": "Countable as unearned income",
+      "recordedConfidence": 78
+    },
+    {
+      "scenario": "03",
+      "model": "claude-sonnet-4-6",
+      "runs": 5,
+      "modalCall": "Countable as unearned income",
+      "modalCallRate": 1,
+      "meanConfidence": 77.6,
+      "recordedCall": "Countable as unearned income",
+      "recordedConfidence": 78
+    },
+    {
+      "scenario": "04",
+      "model": "claude-haiku-4-5-20251001",
+      "runs": 5,
+      "modalCall": "Fully exempt under 6409",
+      "modalCallRate": 1,
+      "meanConfidence": 74.4,
+      "recordedCall": "Trace via lowest intermediate balance",
+      "recordedConfidence": 69
+    },
+    {
+      "scenario": "04",
+      "model": "claude-opus-4-8",
+      "runs": 5,
+      "modalCall": "Trace via lowest intermediate balance",
+      "modalCallRate": 0.8,
+      "meanConfidence": 68.4,
+      "recordedCall": "Trace via lowest intermediate balance",
+      "recordedConfidence": 69
+    },
+    {
+      "scenario": "04",
+      "model": "claude-sonnet-4-6",
+      "runs": 5,
+      "modalCall": "Trace via lowest intermediate balance",
+      "modalCallRate": 0.8,
+      "meanConfidence": 69.2,
+      "recordedCall": "Trace via lowest intermediate balance",
+      "recordedConfidence": 69
+    },
+    {
+      "scenario": "05",
+      "model": "claude-sonnet-4-6",
+      "runs": 5,
+      "modalCall": "Pend for the state medical statement form",
+      "modalCallRate": 1,
+      "meanConfidence": 70.8,
+      "recordedCall": "Pend for the state medical statement form",
+      "recordedConfidence": 71
+    },
+    {
+      "scenario": "05",
+      "model": "claude-opus-4-8",
+      "runs": 5,
+      "modalCall": "Pend for the state medical statement form",
+      "modalCallRate": 1,
+      "meanConfidence": 64.8,
+      "recordedCall": "Pend for the state medical statement form",
+      "recordedConfidence": 71
+    },
+    {
+      "scenario": "05",
+      "model": "claude-haiku-4-5-20251001",
+      "runs": 5,
+      "modalCall": "PCP letter is sufficient under (c)(2)(iii)",
+      "modalCallRate": 1,
+      "meanConfidence": 74,
+      "recordedCall": "Pend for the state medical statement form",
+      "recordedConfidence": 71
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "three-readings-dataset",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "SNAP eligibility scenarios for evaluating LLM calibration on contested benefits determinations, with a reference scorer and persona methodology.",
+  "license": "MIT AND CC-BY-4.0",
+  "scripts": {
+    "validate": "bun scripts/validate.ts",
+    "score:example": "bun scorer/example.ts",
+    "test": "bun test scorer/"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.0"
+  }
+}

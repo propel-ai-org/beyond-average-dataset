@@ -1,0 +1,38 @@
+{
+  "scenario": "01",
+  "arm": "role",
+  "persona": "legal",
+  "personaVersion": "1.0.0",
+  "model": "claude-sonnet-4-6",
+  "runner": "cli",
+  "run": 2,
+  "timestamp": "2026-06-10T21:04:53.805Z",
+  "system": "You are a legal aid attorney, reading a SNAP case file.",
+  "user": "Interpretation question: Is Jordan part of Maria's SNAP household for this application?\n\nCase file:\n\n# The ex-roommate on the lease\n\n## Interpretation question\n\nIs Jordan part of Maria's SNAP household for this application?\n\n## Case facts\n\nMaria (31) applies for SNAP in North Carolina for herself and her two kids (ages 4 and 7), both from a prior relationship. She shares a two-bedroom apartment with Jordan (34), her ex-boyfriend of two years. They broke up eight months ago but both names are on the lease, which has five months left to run; neither can afford to move.\n\nMaria sleeps in one bedroom with the kids, Jordan in the other. She says they \"don't really eat together anymore\": she buys groceries and cooks for herself and the kids, Jordan eats takeout or at his mother's nearby. They share the fridge and the kitchen.\n\nWhen Maria has fallen short on rent (three or four times in the past year), Jordan has covered her half, roughly $150 to $200 each time. He still pays for her streaming on his account.\n\nJordan works full time as a warehouse supervisor at $3,800/month gross. Maria earns $1,450/month part time.\n\n## Walkthrough\n\n### Cohabitation eight months after the breakup\n\nTwo unrelated adults on the same lease, no longer a couple. That's **the household-composition question**, and federal regs leave it to a functional test rather than a status test. (7 CFR 273.1(a))\n\n### Purchase and prepare, separately\n\nThe 7 CFR 273.1(a) test is whether members **\"customarily purchase food and prepare meals together\"**. Maria says no. That's the cleanest argument for keeping Jordan out. (7 CFR 273.1(a))\n\n### Shared fridge, shared kitchen\n\nThe other side. **Shared cooking infrastructure** is exactly what eligibility workers point to when arguing a functional household, regardless of whether anyone actually cooks together this week.\n\n### Recurring rent help\n\nThree or four times a year, $150 to $200 a pop. **Loan-like, or co-mingling?** The classification controls income treatment and the household call.\n\n### The math that makes this stakes\n\nIf Jordan is in, combined gross is $5,250 for a household of four. That's above the 130% FPL gross income test (about $3,380 in 2026). **Eligible at the margin becomes ineligible by a lot.**\n\n### North Carolina has an explicit carve-out\n\nNC manual: *\"Unmarried couples who live together and do not have common children are not required to be included in the same FNS unit.\"* The kids aren't Jordan's. The carve-out applies on its face, but only if \"couple\" still describes them eight months post-breakup. (NC SNAP Policy Manual)\n\nThe named interpretations are:\n- \"Not in household\": NC carve-out applies; purchase and prepare is separate.\n- \"In household\": Functional-household test under 7 CFR 273.1(a).\n- \"Verify further before deciding\": Diligent check before a determination.\n\nRead the case and produce your reading as JSON, with no other text:\n\n{\n  \"call\": \"<the one named interpretation you land on>\",\n  \"weights\": [{ \"interpretation\": \"<named interpretation>\", \"value\": <integer> }, ...],\n  \"citedPhrases\": [\"<verbatim phrase from the case file>\", ...],\n  \"reasoning\": \"<one or two sentences>\"\n}\n\nRules:\n- weights must include every named interpretation exactly once and sum to 100.\n- call must be the interpretation you weight highest.\n- citedPhrases must be verbatim quotes from the case file, not paraphrases.",
+  "rawText": "```json\n{\n  \"call\": \"Not in household\",\n  \"weights\": [\n    { \"interpretation\": \"Not in household\", \"value\": 62 },\n    { \"interpretation\": \"Verify further before deciding\", \"value\": 28 },\n    { \"interpretation\": \"In household\", \"value\": 10 }\n  ],\n  \"citedPhrases\": [\n    \"customarily purchase food and prepare meals together\",\n    \"don't really eat together anymore\",\n    \"she buys groceries and cooks for herself and the kids, Jordan eats takeout or at his mother's\",\n    \"Unmarried couples who live together and do not have common children are not required to be included in the same FNS unit.\",\n    \"The kids aren't Jordan's.\"\n  ],\n  \"reasoning\": \"The federal purchase-and-prepare test cuts cleanly against inclusion — Maria buys and cooks separately, Jordan eats out or elsewhere — and the NC carve-out provides an independent state-law basis since the children are not Jordan's; the recurring rent payments and shared streaming are financial entanglements that warrant a second look but do not speak to food, which is the operative test under 7 CFR 273.1(a).\"\n}\n```",
+  "parsed": {
+    "call": "Not in household",
+    "weights": [
+      {
+        "interpretation": "Not in household",
+        "value": 62
+      },
+      {
+        "interpretation": "Verify further before deciding",
+        "value": 28
+      },
+      {
+        "interpretation": "In household",
+        "value": 10
+      }
+    ],
+    "citedPhrases": [
+      "customarily purchase food and prepare meals together",
+      "don't really eat together anymore",
+      "she buys groceries and cooks for herself and the kids, Jordan eats takeout or at his mother's",
+      "Unmarried couples who live together and do not have common children are not required to be included in the same FNS unit.",
+      "The kids aren't Jordan's."
+    ],
+    "reasoning": "The federal purchase-and-prepare test cuts cleanly against inclusion — Maria buys and cooks separately, Jordan eats out or elsewhere — and the NC carve-out provides an independent state-law basis since the children are not Jordan's; the recurring rent payments and shared streaming are financial entanglements that warrant a second look but do not speak to food, which is the operative test under 7 CFR 273.1(a)."
+  }
+}

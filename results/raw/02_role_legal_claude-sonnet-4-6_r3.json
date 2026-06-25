@@ -1,0 +1,38 @@
+{
+  "scenario": "02",
+  "arm": "role",
+  "persona": "legal",
+  "personaVersion": "1.0.0",
+  "model": "claude-sonnet-4-6",
+  "runner": "cli",
+  "run": 3,
+  "timestamp": "2026-06-10T21:06:08.006Z",
+  "system": "You are a legal aid attorney, reading a SNAP case file.",
+  "user": "Interpretation question: Does Marcus's self-attested hours log, combined with platform earnings records, satisfy ABAWD work verification?\n\nCase file:\n\n# The gig worker hours\n\n## Interpretation question\n\nDoes Marcus's self-attested hours log, combined with platform earnings records, satisfy ABAWD work verification?\n\n## Case facts\n\nMarcus (58) applies for SNAP in Georgia as a single-person household after losing his warehouse job in December 2025. He's been doing DoorDash and Instacart since January, his primary income now, and self-reports averaging 22 hours per week across both platforms.\n\nHis bank statements show $1,400 to $1,700 per month in platform payouts across the last three months. He has in-app earnings summaries from both platforms but neither provides him with a report of logged hours.\n\nHe estimates hours by adding up dash windows and shopping trips in a spiral notebook he keeps in his truck. No dependents, no disability determination, not in any of the codified exemption categories added by HR1.\n\nUnder HR1 he is newly subject to ABAWD; the expansion to age 64 reached him in 2026. Georgia does not hold a statewide ABAWD waiver, and the county he lives in is not on the narrowed high-unemployment list.\n\n## Walkthrough\n\n### Newly subject to ABAWD at 58\n\nPre-HR1, the ABAWD age band ended at 54. **Marcus would not have been subject to work requirements at all.** The post-HR1 expansion to 64 reaches him directly.\n\n### 22 hours per week clears 80/month\n\n**The numbers work, if you believe them.** The question is no longer eligibility on the merits; it's whether the hours are documented to the state's satisfaction.\n\n### Platforms don't produce hours reports by default\n\n**A documentation gap by design, not by the claimant.** Earnings reports exist; hours reports require a specific request and take roughly 30 days.\n\n### Spiral notebook hour log\n\n**A good-faith estimate is not verification.** Or it is, depending on which precedent you cite. Informal labor verification accepts contemporaneous logs; ABAWD post-HR1 may not.\n\n### Post-November 2025 QC counts these errors\n\nStarting Nov 1, 2025, **incorrect determinations on the expanded ABAWD population count toward state QC error rates**, which under HR1 drive FY2028 state cost-sharing.\n\nThe named interpretations are:\n- \"Hours are verified\": Notebook plus earnings meets the evidentiary threshold.\n- \"Hours are not verified\": Earnings are not hours; deny or pend.\n- \"Pend with specific request\": A documented request for platform activity reports before deciding.\n\nRead the case and produce your reading as JSON, with no other text:\n\n{\n  \"call\": \"<the one named interpretation you land on>\",\n  \"weights\": [{ \"interpretation\": \"<named interpretation>\", \"value\": <integer> }, ...],\n  \"citedPhrases\": [\"<verbatim phrase from the case file>\", ...],\n  \"reasoning\": \"<one or two sentences>\"\n}\n\nRules:\n- weights must include every named interpretation exactly once and sum to 100.\n- call must be the interpretation you weight highest.\n- citedPhrases must be verbatim quotes from the case file, not paraphrases.",
+  "rawText": "```json\n{\n  \"call\": \"Pend with specific request\",\n  \"weights\": [\n    { \"interpretation\": \"Pend with specific request\", \"value\": 65 },\n    { \"interpretation\": \"Hours are not verified\", \"value\": 25 },\n    { \"interpretation\": \"Hours are verified\", \"value\": 10 }\n  ],\n  \"citedPhrases\": [\n    \"A documentation gap by design, not by the claimant.\",\n    \"Earnings reports exist; hours reports require a specific request and take roughly 30 days.\",\n    \"A good-faith estimate is not verification.\",\n    \"incorrect determinations on the expanded ABAWD population count toward state QC error rates\",\n    \"Informal labor verification accepts contemporaneous logs; ABAWD post-HR1 may not.\"\n  ],\n  \"reasoning\": \"Better evidence exists and is obtainable within a defined window — the platforms can produce activity reports — so denying or approving on an incomplete record is premature; pending with a documented specific request for those reports is the only posture that both protects Marcus's procedural rights and insulates the state from a QC-countable error under the post-HR1 regime. The notebook log, standing alone, is insufficient given the heightened evidentiary stakes, but it is good-faith contemporaneous documentation that supports holding the case open rather than outright denial.\"\n}\n```",
+  "parsed": {
+    "call": "Pend with specific request",
+    "weights": [
+      {
+        "interpretation": "Pend with specific request",
+        "value": 65
+      },
+      {
+        "interpretation": "Hours are not verified",
+        "value": 25
+      },
+      {
+        "interpretation": "Hours are verified",
+        "value": 10
+      }
+    ],
+    "citedPhrases": [
+      "A documentation gap by design, not by the claimant.",
+      "Earnings reports exist; hours reports require a specific request and take roughly 30 days.",
+      "A good-faith estimate is not verification.",
+      "incorrect determinations on the expanded ABAWD population count toward state QC error rates",
+      "Informal labor verification accepts contemporaneous logs; ABAWD post-HR1 may not."
+    ],
+    "reasoning": "Better evidence exists and is obtainable within a defined window — the platforms can produce activity reports — so denying or approving on an incomplete record is premature; pending with a documented specific request for those reports is the only posture that both protects Marcus's procedural rights and insulates the state from a QC-countable error under the post-HR1 regime. The notebook log, standing alone, is insufficient given the heightened evidentiary stakes, but it is good-faith contemporaneous documentation that supports holding the case open rather than outright denial."
+  }
+}
